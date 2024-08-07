@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" >
+    <title>Document</title>
+</head>
+<body>
+    <div>
+         <h1 id="titulo"> Cadrastro de informações</h1>
+         <p id="subtitulo">Preencha o formulário abaixo com as informações necessárias</p>
+    </div>
+    <form >
+        < >
+            <div class="grupo">
+                <label>Nome fantasia</label>
+                <input type="text" name="Nome fantasia" id="Nome fantasia" required>
+            </div>
+            <div class="grupo">
+                <label > Razão Social</label>
+                <input type="text" name ="Razão Social" id="Razão Social"required>
+            </div>
+            <div class="grupo">
+                <label>CNPJ</label>
+                <input type="number" name="CNPJ" id="CNPJ"required>
+            </div>
+            <div class="grupo">
+                <label>Endereço-Logradouro</label>
+                <input type="text" name="Endereço-Logradouro"id = "Endereco"required>
+                <label>Bairro</label>
+                <input type="text" name="Bairro" id="Bairro"required>
+                <label>Cidade</label>
+                <input type="text" name="Cidade" id="Cidade"required>
+                <label>Estado</label>
+                <input type="text" name="Estado" id="Estado"required>
+                <label>CEP</label>
+                <input type="number" name="CEP" id="CEP"required>
+            </div>
+            <div class="grupo">
+                <label>Telefone Fixo</label>
+                <input type="number" name="Telefone Fixo" id="Telefone Fixo">
+                <label>Telefone Celular</label>
+                <input type="number" name="Telefone Celular" id="Telefone Celular"required>
+            </div>
+            <div class="grupo">
+                <label>E-mail</label>
+                <input type="email" name="E-mail" id="E-mail"required>
+            </div>
+
+
+        <h2>Tabela de Produtos</h2>
+        <p>Produto 1</p>
+        <table class="table table-bordered" id="tabela-produtos">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Unidade de Medida</th>
+                    <th>Quantidade em Estoque</th>
+                    <th>Valor Unitário</th>
+                    <th>Valor Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" class="form-control" name="descricao" required></td>
+                    <td><input type="text" class="form-control" name="unidade-medida" required></td>
+                    <td><input type="number" class="form-control" name="quantidade" required></td>
+                    <td><input type="number" class="form-control" name="valor-unitario" step="0.01" required></td>
+                    <td><input type="number" class="form-control" name="valor-total" step="0.01" readonly></td>
+                    <td><button type="button" class="btn btn-danger btn-sm btn-excluir">Excluir</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Produto 2</p>
+        <table class="table table-bordered" id="tabela-produtos">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Unidade de Medida</th>
+                    <th>Quantidade em Estoque</th>
+                    <th>Valor Unitário</th>
+                    <th>Valor Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" class="form-control" name="descricao" required></td>
+                    <td><input type="text" class="form-control" name="unidade-medida" required></td>
+                    <td><input type="number" class="form-control" name="quantidade" required></td>
+                    <td><input type="number" class="form-control" name="valor-unitario" step="0.01" required></td>
+                    <td><input type="number" class="form-control" name="valor-total" step="0.01" readonly></td>
+                    <td><button type="button" class="btn btn-danger btn-sm btn-excluir">Excluir</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" id="adicionar-produto" class="btn btn-primary">Adicionar Produto</button>      
+        <h2>Tabela de Anexos</h2>
+        <table class="table table-bordered" id="tabela-anexos">
+            <thead>
+                <tr>
+                    <th>Nome do Documento</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="file" class="form-control-file" name="anexo" required></td>
+                    <td>
+                        <button type="button" class="btn btn-info btn-sm btn-visualizar">Visualizar</button>
+                        <button type="button" class="btn btn-danger btn-sm btn-excluir-anexo">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" id="adicionar-anexo" class="btn btn-primary">Adicionar Anexo</button>
+        
+    </form>
+</body>
+</html>

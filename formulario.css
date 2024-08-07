@@ -1,0 +1,87 @@
+/* Define a cor de fundo e a cor do texto do body */
+body {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o container principal do formulário */
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Adiciona um espaço acima do formulário */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilo para os títulos das seções */
+h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para o botão de adicionar produtos e anexos */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Estilo para os botões de excluir e visualizar */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-info:hover {
+    background-color: #117a8b;
+    border-color: #0c5460;
+}
+
+/* Estilo para os campos de entrada e tabela */
+.form-control {
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.table {
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+/* Estilo para as linhas da tabela */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Estilo para o modal */
+.modal-content {
+    border-radius: 8px;
+    padding: 20px;
+}
